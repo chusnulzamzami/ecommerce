@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Inventory Store</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="" type="image/x-icon">
+  </head>
+
+  <body>
+    <!--Awal Navbar-->
+    <nav class="navbar" style="background-color: #4ac7accb;">
+        <div class="container">
+          <div class="text-black">
+             <strong class="fs-4">Login Petugas Inventory Store</strong>                    
+           </div>          
+        </div>
+    </nav>
+    <!--Akhir Navbar-->
+
+    <!--Halaman Login-->
+    <div class="container-fluid py-4" >
+      <div class="container rounded-3" style="background-color: white; width: 800px;">
+        <p class="text-center fs-3 fw-bolder pt-4">Masuk Sebagai Petugas</p>
+        <form class="row g-3">
+          <div class="col-md-6 offset-3">
+            <label for="inputEmail4" class="form-label">Username</label>
+            <div class="input-group">
+              <div class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H392.6c-5.4-9.4-8.6-20.3-8.6-32V352c0-2.1 .1-4.2 .3-6.3c-31-26-71-41.7-114.6-41.7H178.3zM528 240c17.7 0 32 14.3 32 32v48H496V272c0-17.7 14.3-32 32-32zm-80 32v48c-17.7 0-32 14.3-32 32V480c0 17.7 14.3 32 32 32H608c17.7 0 32-14.3 32-32V352c0-17.7-14.3-32-32-32V272c0-44.2-35.8-80-80-80s-80 35.8-80 80z"/></svg></div>
+              <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+            </div>
+          </div>
+          <div class="col-md-6 offset-3">
+            <label for="inputPassword4" class="form-label">Password</label>
+            <div class="input-group">
+              <div class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"/></svg></div>
+              <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+            </div>
+          </div>
+          <div class="col-6 mx-auto">
+            <div class="d-grid gap-2 pb-4 pt-2">
+              <button class="btn btn-primary" type="submit">Masuk</button>
+              <a href="beranda.php" class="btn btn-danger">Kembali</a>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+    <!--Halaman Login-->
+    
+     <!-- Footer -->
+     <footer class="shadow-sm bg-body-tertiary p-4 mt-5">
+      <div class="container-fluid "> 
+        <div class="row mt-2">
+          <div class="col-md-6 text-md-start text-center pt-2 pb-2">
+            <a href="#" class="text-decoration-none">
+              <img src="#" style="width: 40px;">
+            </a>
+            <span class="ps-1"><i class="fa-regular fa-copyright"></i> @2023 | Create by <a href="https://instagram.com/chairulhuda._?igshid=OGQ5ZDc2ODk2ZA==" class="text-decoration-none text-dark fw-bold">Inventory Store</a></span>
+          </div>
+
+          <div class="col-md-6 text-md-end text-center pt-2 pb-2">
+            <a href="#" class="text-decoration-none">
+              <img src="../Gambar/socialmedia/facebook.png" class="ms-2" style="width: 30px;">
+            </a>
+            <a href="#" class="text-decoration-none">
+              <img src="../Gambar/socialmedia/instagram.png" class="ms-2" style="width: 30px;">
+            </a>
+            <a href="#" class="text-decoration-none">
+              <img src="../Gambar/socialmedia/whatsapp.png" class="ms-2" style="width: 30px;">
+            </a>
+            <a href="#" class="text-decoration-none">
+              <img src="../Gambar/socialmedia/twitter.png" class="ms-2" style="width: 30px;">
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+    <!-- Akhir Fooer -->
+    
+  </body>

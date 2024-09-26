@@ -1,0 +1,66 @@
+  body{
+    font-family: 'Poppins', sans-serif;  
+
+};
+
+.sajdasjdklas{
+    border: 30;
+    background-color: #fff;
+    border: none;   
+}
+
+.bagian-keluar{
+    background-color: #4ac7accb;;
+    width: 100%;
+
+}
+
+.button_icon_logout:hover {
+    background-color: rgb(73, 192, 238);
+    transition: .2s ease-in-out;
+    transition-delay: .1s;
+    border-radius: 0px;
+  }
+
+.modul-button:hover {
+    background-color: rgb(73, 192, 238);
+    transition: .2s ease-in-out;
+    transition-delay: .1s;
+    border-radius: 8px;
+}
+
+.side-container{
+  display: flex;
+  min-height: 70vh;
+}
+
+
+
+.side-hover:hover{
+  background-color: rgb(73, 192, 238);
+    transition: .2s ease-in-out;
+    transition-delay: .1s;
+    border-radius: 0px;
+    
+}
+
+  #content {
+    margin-left: 250px;
+    padding: 16px;
+  }
+
+  /* Style the sidebar links */
+  #sidebar a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+  }
+
+  /* Change color on hover */
+  #sidebar a:hover {
+    color: #f1f1f1;
+  }
+
+

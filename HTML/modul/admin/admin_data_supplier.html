@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../../css/dashboard.css">
+    <title>Inventory Store</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="" type="image/x-icon">
+  </head>
+
+  <body >
+    <!--Awal Navbar-->
+    <nav class="navbar" style="background-color: rgba(147, 196, 245, 0.796);">
+        <div class="container">
+          <a href="../../admin_dashboard.html" class="text-decoration-none">
+            <div class="text-black">
+               <strong class="fs-4 ">Inventory Store</strong>                    
+             </div>
+          </a>
+          <div class="nav-item ms-auto"> 
+            <div class="d-inline-flex gap-1 ">
+              <button class="button_icon_logout btn" data-bs-toggle="Button">
+                <div class="text-black fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <img class="img-fluid" width="30" src="data:image/jpeg;base64,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" alt="">
+                    Admin
+                </div>
+              </button>
+            </div>
+
+            <div class="collapse" id="collapseExample">
+              <div class="bg-white">
+                <!-- Button trigger modal -->
+                <div class="text-center">
+                  <button type="button" class="modul-button btn btn-close-white " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Keluar
+                  </button>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Peringatan</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Yakin ingin keluar
+                      </div>
+                      <div class="modal-footer">
+                        <a href="admin_data_supplier.html" type="button" class="btn btn-secondary" data-bs-dismiss="modal">tidak</a>
+                        <a href="../../beranda.html" type="button" class="btn btn-primary">Ya</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <!--Akhir Navbar-->
+    
+    <!--Side Bar-->
+    
+    <div class="side-container">
+      <div class="col-xxl-2 bd-gray-500 border border-1 border-black">
+          <div class="position-static">
+            <a href="../../admin_dashboard.html" class="text-decoration-none text-black fw-bolder fs-4">
+              <div class="border border-1 border-black text-center p-2">
+                Dashboard 
+              </div>
+            </a>
+            
+            <a href="../../admin_dashboard.html" class="text-decoration-none">
+              <div class="border border-1 border-black p-1 side-hover fs-5">
+                <div class="text-black ms-2 "><i class="bi bi-house-door"></i><span class="ms-1">Beranda</span></div> 
+              </div>
+            </a>
+            <a href="admin_data_admin.html" class="text-decoration-none">
+              <div class="border border-1 border-black p-1 side-hover fs-5">
+                <div class="text-black ms-2 "><i class="bi bi-person-fill"></i><span class="ms-1">Data Admin</span></div> 
+              </div>
+            </a>
+            <a href="admin_data_petugas.html" class="text-decoration-none">
+              <div class="border border-1 border-black p-1 side-hover fs-5">
+                <div class="text-black ms-2 "><i class="bi bi-people"></i><span class="ms-1">Data Petugas</span></div> 
+              </div>
+            </a>
+            <a href="admin_data_supplier.html" class="text-decoration-none">
+              <div class="border border-1 border-black p-1 side-hover fs-5">
+                <div class="text-black ms-2 "><i class="bi bi-truck"></i><span class="ms-1">Data Supplier</span></div> 
+              </div>
+            </a>
+            <a href="admin_data_rak.html" class="text-decoration-none">
+              <div class="border border-1 border-black p-1 side-hover fs-5">
+                <div class="text-black ms-2 "><i class="bi bi-hdd-rack"></i></i><span class="ms-1">Data Rak</span></div> 
+              </div>
+            </a>
+            <a href="admin_data_barang.html" class="text-decoration-none ">
+              <div class="border border-1 border-black p-1 side-hover fs-5">
+                <div class="text-black ms-2 "><i class="bi bi-dropbox"></i><span class="ms-1">Data Barang</span></div> 
+              </div>
+            </a>
+            <a href="admin_data_ajuan.html" class="text-decoration-none ">
+              <div class="border border-1 border-black p-1 side-hover fs-5">
+                <div class="text-black ms-2 "><i class="bi bi-clipboard2-fill"></i><span class="ms-1">Data Ajuan</span></div> 
+              </div>
+            </a>
+            <a href="admin_data_barang_keluar.html" class="text-decoration-none ">
+              <div class="border border-1 border-black p-1 side-hover fs-5">
+                <div class="text-black ms-2 "><i class="bi bi-cart3"></i><span class="ms-1">Data Barang Keluar</span></div> 
+              </div>
+            </a>
+
+            <!-- Button trigger modal -->
+            <a href="#" class="text-decoration-none " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              <div class="border border-1 border-bo border-black p-1 side-hover fs-5">
+                <div class="text-black ms-2 "><i class="bi bi-exclamation-triangle-fill"></i><span class="ms-1">Keluar</span></div> 
+              </div>
+            </a>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Peringatan</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Yakin ingin keluar
+                  </div>
+                  <div class="modal-footer">
+                    <a href="admin_data_supplier.html" type="button" class="btn btn-secondary" data-bs-dismiss="modal">tidak</a>
+                    <a href="../../beranda.html" type="button" class="btn btn-primary">Ya</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      <!--Main Side Content-->
+      <div class="col-10 bd-gray-400">
+        <div class="ms-5 mt-4 fw-bolder fs-2">Data Supplier</div>
+        
+        </div>
+
+    </div>
+    <!--Akhir Side Bar-->
+
+      
+
+      
+     <!-- Footer -->
+     <footer class="shadow-sm bg-body-tertiary p-4 mt-5">
+      <div class="container-fluid "> 
+        <div class="row mt-2">
+          <div class="col-md-6 text-md-start text-center pt-2 pb-2">
+            <a href="#" class="text-decoration-none">
+              <img src="#" style="width: 40px;">
+            </a>
+            <span class="ps-1"><i class="fa-regular fa-copyright"></i> @2023 | Create by <a href="#" class="text-decoration-none text-dark fw-bold">Inventory Store</a></span>
+          </div>
+
+          <div class="col-md-6 text-md-end text-center pt-2 pb-2">
+            <a href="#" class="text-decoration-none">
+              <img src="../../../Gambar/socialmedia/facebook.png" class="ms-2" style="width: 30px;">
+            </a>
+            <a href="#" class="text-decoration-none">
+              <img src="../../../Gambar/socialmedia/instagram.png" class="ms-2" style="width: 30px;">
+            </a>
+            <a href="#" class="text-decoration-none">
+              <img src="../../../Gambar/socialmedia/whatsapp.png" class="ms-2" style="width: 30px;">
+            </a>
+            <a href="#" class="text-decoration-none">
+              <img src="../../../Gambar/socialmedia/twitter.png" class="ms-2" style="width: 30px;">
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+    <!-- Akhir Fooer -->
+    
+  </body>
